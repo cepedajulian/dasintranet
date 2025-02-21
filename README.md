@@ -11,4 +11,4 @@ composer create-project dasintranet/dasintranet nameproject
    - Julian Cepeda
 
 ## URL
-    - DasIntranet.com
+    DasIntranet.com
