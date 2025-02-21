@@ -1,0 +1,24 @@
+{
+    "name": "dasintranet/dasintranet",
+    "description": "PHP Minimal DasIntranet Framework Skeleton",
+    "keywords": ["PHP","Framework"],
+    "homepage": "https://dasintranet.com",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dasintranet\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cepeda Julian",
+            "email": "cepedajulian@gmail.com",
+            "homepage": "https://cepedajulian.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "dasintranet/framework": "^1.0"
+    }
+}
