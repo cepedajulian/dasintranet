@@ -1,0 +1,21 @@
+{
+    "name": "dasintranet/framework",
+    "description": "Lightweight PHP framework for DasIntranet",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["php", "framework"],
+    "require": {
+        "php": "^8.4",
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
+    "suggest": {
+        "ext-pdo_mysql": "Required for the Db class when using MariaDB/MySQL",
+        "ext-curl": "Required for Api and ApiFree HTTP requests"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dasintranet\\Framework\\": "src/"
+        }
+    }
+}
