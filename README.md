@@ -16,7 +16,7 @@ Microframework PHP para desarrollar aplicaciones web y APIs pequeñas sin depend
 - **Base de datos:** consultas preparadas nativas, conexión `utf8mb4`, validación de identificadores y transacciones explícitas mediante `Db::transaction()`.
 - **Clientes HTTP:** `Api` y `ApiFree` comparten un cliente interno, verifican certificados TLS, utilizan tiempos de espera y exponen el estado HTTP mediante `$status`.
 - **Seguridad:** las cookies de sesión no se envían a servicios externos de forma automática; CORS permanece desactivado salvo configuración explícita en la aplicación de ejemplo.
-- **Ejemplo funcional:** se incluyen las rutas `/` y `/hello` para comprobar la instalación.
+- **Ejemplo funcional:** se incluyen las rutas `/` para comprobar la instalación.
 
 ## Requisitos
 
