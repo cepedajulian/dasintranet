@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "dasintranet/framework": "^1.0.1"
+        "dasintranet/framework": "^1.0"
     },
     "repositories": [
         {
@@ -14,7 +14,7 @@
             "options": {
                 "symlink": true,
                 "versions": {
-                    "dasintranet/framework": "1.0.1"
+                    "dasintranet/framework": "1.0.2"
                 }
             }
         }

@@ -1,3 +1,17 @@
+# DasIntranet Framework
+
+**Versión 1.0.2** · **PHP 8.4** · **Composer / PSR-4**
+
+DasIntranet Framework es un microframework PHP orientado a aplicaciones web y APIs sencillas. Ofrece enrutamiento HTTP, controladores, vistas con layouts, acceso a MariaDB/MySQL mediante PDO y clientes HTTP basados en cURL.
+
+## Novedades de la versión 1.0.2
+
+- **`ApiFree` y sesión web:** reenvía automáticamente el identificador de la sesión PHP activa a la misma instancia del servidor, únicamente por HTTPS y con un destino confiable. No envía cookies a servicios externos. Se libera el bloqueo de la sesión durante cURL y se restablece después, incluso ante errores.
+- **`ApiFree` y body:** conserva literalmente los cuerpos enviados como string; mantiene el comportamiento heredado para arrays; añade modos explícitos `json` y `form`. Permite recuperar tanto la respuesta decodificada en `$response` como el cuerpo exacto en `$rawBody`.
+- **Respuesta HTTP:** `ApiFree` conserva el código de estado y reenvía únicamente determinadas cabeceras seguras, con `$forwardResponse = true` por defecto para compatibilidad. Nunca reenvía `Set-Cookie` ni `Content-Length`.
+- **Sin cambios en el orden de argumentos:** `__construct($url, $method, $body)` y `exec($url, $method, $body)` mantienen su contrato posicional.
+- **Pruebas:** `php tests/apifree_compat.php` comprueba la compatibilidad sin depender de una API externa.
+
 # DasIntranet — Framework PHP 1.0.1
 
 Microframework PHP para desarrollar aplicaciones web y APIs pequeñas sin depender de Laravel ni Symfony. Incluye enrutamiento, controladores, vistas, acceso a MariaDB/MySQL mediante PDO y clientes HTTP con cURL.
